@@ -1,0 +1,17 @@
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\bin\Debug\net8.0-windows\AulaAdo.exe
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\bin\Debug\net8.0-windows\AulaAdo.deps.json
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\bin\Debug\net8.0-windows\AulaAdo.runtimeconfig.json
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\bin\Debug\net8.0-windows\AulaAdo.dll
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\bin\Debug\net8.0-windows\AulaAdo.pdb
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.Form1.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.csproj.GenerateResource.cache
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.AssemblyInfoInputs.cache
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.AssemblyInfo.cs
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.csproj.CoreCompileInputs.cache
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.sourcelink.json
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.dll
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\refint\AulaAdo.dll
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.pdb
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\AulaAdo.genruntimeconfig.cache
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\AulaAdo\obj\Debug\net8.0-windows\ref\AulaAdo.dll
