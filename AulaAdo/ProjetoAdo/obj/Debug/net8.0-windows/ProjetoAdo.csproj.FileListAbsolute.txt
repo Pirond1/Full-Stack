@@ -25,3 +25,4 @@ C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\ProjetoAdo\bin\Debug
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\ProjetoAdo\bin\Debug\net8.0-windows\Entidades.pdb
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\ProjetoAdo\obj\Debug\net8.0-windows\ProjetoAdo.csproj.AssemblyReference.cache
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\ProjetoAdo\obj\Debug\net8.0-windows\ProjetoAdo.csproj.CopyComplete
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\AulaAdo\ProjetoAdo\obj\Debug\net8.0-windows\ProjetoAdo.FrmConsultaCliente.resources

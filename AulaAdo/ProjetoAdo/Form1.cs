@@ -62,6 +62,10 @@ namespace ProjetoAdo
         {
             if (txtID.Text != "")
             {
+                carregarPropriedades();
+
+                (new ClientesDAO()).excluir(cliente);
+
                 MessageBox.Show("Excluido com Sucesso!");
 
                 limpar();
@@ -95,6 +99,10 @@ namespace ProjetoAdo
                     if(cliente.ID == 0)
                     {
                         (new ClientesDAO()).inserir(cliente);
+                    }
+                    else
+                    {
+                        (new ClientesDAO()).alterar(cliente);
                     }
 
                     MessageBox.Show("Salvo com Sucesso!");
@@ -135,14 +143,27 @@ namespace ProjetoAdo
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
-            limpar();
-            gbDados.Enabled = false;
-            btnNovo.Enabled = false;
-            btnLocalizar.Enabled = false;
-            btnAlterar.Enabled = true;
-            btnCancelar.Enabled = true;
-            btnExcluir.Enabled = true;
-            btnSalvar.Enabled = false;
+            FrmConsultaCliente frm = new FrmConsultaCliente();
+            frm.ShowDialog();
+            if (frm.codigo != 0)
+            {
+                int id = frm.codigo;
+
+                ClientesDAO dao = new ClientesDAO();
+                Clientes obj = dao.consultar(id);
+
+                txtID.Text = obj.ID.ToString();
+                txtNome.Text = obj.Nome;
+                txtNascimento.Text = obj.DataNascimento.HasValue ? obj.DataNascimento.Value.ToString() : "";
+
+                gbDados.Enabled = false;
+                btnNovo.Enabled = false;
+                btnLocalizar.Enabled = false;
+                btnAlterar.Enabled = true;
+                btnCancelar.Enabled = true;
+                btnExcluir.Enabled = true;
+                btnSalvar.Enabled = false;
+            }
         }
     }
 }
