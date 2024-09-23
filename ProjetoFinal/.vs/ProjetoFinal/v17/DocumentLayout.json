@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE6D233-93B3-4324-9983-ACE3C6A33DB3}|InfraEstrutura\\InfraEstrutura.csproj|c:\\users\\user\\documents\\github\\full-stack\\projetofinal\\infraestrutura\\contexto\\contexto_empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE6D233-93B3-4324-9983-ACE3C6A33DB3}|InfraEstrutura\\InfraEstrutura.csproj|solutionrelative:infraestrutura\\contexto\\contexto_empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3964290-B2FA-42D3-A284-B978CF8F28D8}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\user\\documents\\github\\full-stack\\projetofinal\\projetofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3964290-B2FA-42D3-A284-B978CF8F28D8}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3964290-B2FA-42D3-A284-B978CF8F28D8}|ProjetoFinal\\ProjetoFinal.csproj|c:\\users\\user\\documents\\github\\full-stack\\projetofinal\\projetofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3964290-B2FA-42D3-A284-B978CF8F28D8}|ProjetoFinal\\ProjetoFinal.csproj|solutionrelative:projetofinal\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contexto_Empresa.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\Contexto\\Contexto_Empresa.cs",
+              "RelativeDocumentMoniker": "InfraEstrutura\\Contexto\\Contexto_Empresa.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\Contexto\\Contexto_Empresa.cs",
+              "RelativeToolTip": "InfraEstrutura\\Contexto\\Contexto_Empresa.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwB8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T19:01:31.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\ProjetoFinal\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjetoFinal\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\ProjetoFinal\\Form1.cs",
+              "RelativeToolTip": "ProjetoFinal\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:53:59.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\ProjetoFinal\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjetoFinal\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\ProjetoFinal\\Form1.cs [Projeto]",
+              "RelativeToolTip": "ProjetoFinal\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T17:51:51.108Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
