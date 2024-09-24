@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using InfraEstrutura.Contexto;
+using Interfaces;
 
 namespace InfraEstrutura.Repositorio
 {
 
 
-    public abstract class BaseRepositorio<T> where T : class
+    public abstract class BaseRepositorio<T> : IRepositorioBase<T> where T : class
     {
 
         protected Contexto_Empresa _contexto;

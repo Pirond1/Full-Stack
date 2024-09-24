@@ -1072,6 +1072,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Entidades": "1.0.0",
+          "Interfaces": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
@@ -1080,6 +1081,19 @@
         },
         "runtime": {
           "bin/placeholder/InfraEstrutura.dll": {}
+        }
+      },
+      "Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Interfaces.dll": {}
         }
       }
     }
@@ -2906,6 +2920,11 @@
       "type": "project",
       "path": "../InfraEstrutura/InfraEstrutura.csproj",
       "msbuildProject": "../InfraEstrutura/InfraEstrutura.csproj"
+    },
+    "Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/Interfaces.csproj",
+      "msbuildProject": "../Interfaces/Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
