@@ -8,7 +8,7 @@ using Entidades;
 
 namespace InfraEstrutura.Contexto
 {
-    public class Contexto_Empresa: DbContext
+    public class Contexto_Empresa : DbContext
     {
         public Contexto_Empresa()
         {
@@ -16,7 +16,7 @@ namespace InfraEstrutura.Contexto
             this.Database.EnsureCreated();
         }
         //quais entidades irão ser mapeadas como tabelas
-        public DbSet<Aluguel>aluguel { get; set; }
+        public DbSet<Aluguel> aluguel { get; set; }
         public DbSet<Automovel> automovel { get; set; }
         public DbSet<Cliente> cliente { get; set; }
         public DbSet<Funcionario> funcionario { get; set; }
@@ -27,45 +27,48 @@ namespace InfraEstrutura.Contexto
         public DbSet<Tipo_Ordem> tipo_ordem { get; set; }
         public DbSet<Venda> venda { get; set; }
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    }
 
-    
-    protected override void OnConfiguration(DbContextOptionsBuilder optionsBuilder){
-        //base.OnConfiguring(optionsBuilder);
-        var stringConexao = @"Server=PC-SMARTGAMER; 
-            DataBase=dbEmpresa2025;integrated security=true; TrustServerCertificate=True;";
-            // ALTERAR O SERVER DE ACORDO COM O PC QUE ESTÁ (Em casa -> PC-SMARTGAMER / Faculdade -> LAB10-14)
 
-        if (!optionsBuilder.IsConfigured)
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(stringConexao);
-        }
+        
+        //base.OnConfiguring(optionsBuilder);
+        var stringConexao = @"Server=LAB10-14; 
+                 DataBase=dbProjetoFinal;integrated security=true; TrustServerCertificate=True;";
+                 // ALTERAR O SERVER DE ACORDO COM O PC QUE ESTÁ (Em casa -> PC-SMARTGAMER / Faculdade -> LAB10-14)
 
-    }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        //  base.OnModelCreating(modelBuilder);
+             if (!optionsBuilder.IsConfigured)
+             {
+                 optionsBuilder.UseSqlServer(stringConexao);
+             }
 
-        modelBuilder.Entity<Marca>(e => {
-            //qtde maxima de caracteres
-            e.Property(p => p.nomeMarca).HasMaxLength(50);
+         }
+         protected override void OnModelCreating(ModelBuilder modelBuilder)
+         {
+             //  base.OnModelCreating(modelBuilder);
 
-        });
+             modelBuilder.Entity<Marca>(e => {
+                 //qtde maxima de caracteres
+                 e.Property(p => p.nomeMarca).HasMaxLength(50);
+
+             });
 
 
-        modelBuilder.Entity<Modelo>(e => {
-            //qtde maxima de caracteres
-            e.Property(p => p.nomeModelo).HasMaxLength(50);
+             modelBuilder.Entity<Modelo>(e => {
+                 //qtde maxima de caracteres
+                 e.Property(p => p.nomeModelo).HasMaxLength(50);
 
-            //relacionamento
+                 //relacionamento
 
-            e.HasOne(p => p.marca) //lado um
-                .WithMany(p => p.modelo) //lado muitos
-                .HasForeignKey(p => p.idMarca) //chave estrangeira
-                .HasConstraintName("fk_marca_modelo") //nome relacionamento
-                .OnDelete(DeleteBehavior.NoAction);//comportamento delete
+                 e.HasOne(p => p.marca) //lado um
+                     .WithMany(p => p.modelo) //lado muitos
+                     .HasForeignKey(p => p.idMarca) //chave estrangeira
+                     .HasConstraintName("fk_marca_modelo") //nome relacionamento
+                     .OnDelete(DeleteBehavior.NoAction);//comportamento delete
 
-        });
+             });
 
+         }
     }
 }
