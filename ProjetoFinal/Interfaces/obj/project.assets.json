@@ -986,6 +986,20 @@
             "rid": "win"
           }
         }
+      },
+      "Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidades.dll": {}
+        }
       }
     }
   },
@@ -2740,12 +2754,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Entidades/Entidades.csproj",
+      "msbuildProject": "../Entidades/Entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.EntityFrameworkCore >= 8.0.8",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8"
+      "Entidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2754,11 +2772,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj",
-      "projectName": "Entidades",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Interfaces\\Interfaces.csproj",
+      "projectName": "Interfaces",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Interfaces\\Interfaces.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2774,7 +2792,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2791,16 +2813,6 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[8.0.8, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[8.0.8, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
