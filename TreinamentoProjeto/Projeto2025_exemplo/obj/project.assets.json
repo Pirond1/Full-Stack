@@ -2930,7 +2930,8 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Entidades >= 1.0.0",
-      "InfraEstrutura >= 1.0.0"
+      "InfraEstrutura >= 1.0.0",
+      "Interfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2973,6 +2974,9 @@
             },
             "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\TreinamentoProjeto\\InfraEstrutura\\InfraEstrutura.csproj": {
               "projectPath": "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\TreinamentoProjeto\\InfraEstrutura\\InfraEstrutura.csproj"
+            },
+            "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\TreinamentoProjeto\\Interfaces\\Interfaces.csproj": {
+              "projectPath": "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\TreinamentoProjeto\\Interfaces\\Interfaces.csproj"
             }
           }
         }

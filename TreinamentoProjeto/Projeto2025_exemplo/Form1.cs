@@ -1,6 +1,7 @@
 using InfraEstrutura;
 using Entidades;
 using InfraEstrutura.Contexto;
+using InfraEstrutura.Repositorio;
 
 namespace Projeto2025_exemplo
 {
@@ -16,7 +17,11 @@ namespace Projeto2025_exemplo
             //Contexto_Empresa contexto = new Contexto_Empresa(); 
             using (var contexto = new Contexto_Empresa())
             {
-
+                CategoriaRepositorio cat = new CategoriaRepositorio(contexto);
+                cat.Inserir(new Categoria() {
+                    descricao = "teste",
+                }) ;
+                contexto.SaveChanges();
             }
 
         }
