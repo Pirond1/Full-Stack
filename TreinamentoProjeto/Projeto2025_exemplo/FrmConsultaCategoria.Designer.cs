@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtDescricao = new TextBox();
             button1 = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            gdDados = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)gdDados).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -40,16 +40,16 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(58, 15);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Descrição";
             // 
-            // textBox1
+            // txtDescricao
             // 
-            textBox1.Location = new Point(12, 27);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(353, 23);
-            textBox1.TabIndex = 1;
+            txtDescricao.Location = new Point(12, 27);
+            txtDescricao.Name = "txtDescricao";
+            txtDescricao.Size = new Size(353, 23);
+            txtDescricao.TabIndex = 1;
             // 
             // button1
             // 
@@ -57,30 +57,32 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Text = "Localizar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // dataGridView1
+            // gdDados
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 72);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(482, 255);
-            dataGridView1.TabIndex = 3;
+            gdDados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gdDados.Location = new Point(12, 72);
+            gdDados.Name = "gdDados";
+            gdDados.Size = new Size(482, 255);
+            gdDados.TabIndex = 3;
+            gdDados.CellDoubleClick += gdDados_CellDoubleClick;
             // 
             // FrmConsultaCategoria
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(506, 339);
-            Controls.Add(dataGridView1);
+            Controls.Add(gdDados);
             Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(txtDescricao);
             Controls.Add(label1);
             Name = "FrmConsultaCategoria";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Consulta da Categoria";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gdDados).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -88,8 +90,8 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtDescricao;
         private Button button1;
-        private DataGridView dataGridView1;
+        private DataGridView gdDados;
     }
 }

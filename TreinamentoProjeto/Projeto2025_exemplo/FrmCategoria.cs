@@ -34,11 +34,17 @@ namespace Projeto2025_exemplo
 
         public Categoria carregaPropriedades()
         {
-            Categoria cat = new Categoria()
+            Categoria cat;
+            if(txtID.Text != "")
             {
-                id = txtID.Text == "" ? 0 : int.Parse(txtID.Text),
-                descricao = txtDescricao.Text
-            };
+                //Alterar, estou recuperando o registro antigo para manter a referencia do objeto do entity
+                cat = repositorio.Recuperar(c=>c.id == int.Parse(txtID.Text));
+            }
+            else cat = new Categoria(); //Inserir
+            
+            cat.id = txtID.Text == "" ? 0 : int.Parse(txtID.Text);
+            cat.descricao = txtDescricao.Text;
+
             return cat;
         }
 
@@ -50,7 +56,7 @@ namespace Projeto2025_exemplo
             btnAlterar.Enabled = false;
             btnCancelar.Enabled = false;
             btnExcluir.Enabled = false;
-            btnLocalizar.Enabled = false;
+            btnSalvar.Enabled = false;
             Limpar();
             txtDescricao.Focus();
         }
@@ -63,7 +69,7 @@ namespace Projeto2025_exemplo
             btnAlterar.Enabled = false;
             btnCancelar.Enabled = true;
             btnExcluir.Enabled = false;
-            btnLocalizar.Enabled = true;
+            btnSalvar.Enabled = true;
             Limpar();
             txtDescricao.Focus();
         }
@@ -78,8 +84,7 @@ namespace Projeto2025_exemplo
                 btnAlterar.Enabled = false;
                 btnCancelar.Enabled = true;
                 btnExcluir.Enabled = false;
-                btnLocalizar.Enabled = true;
-                Limpar();
+                btnSalvar.Enabled = true;
                 txtDescricao.Focus();
             }
             else
@@ -114,7 +119,7 @@ namespace Projeto2025_exemplo
                     btnAlterar.Enabled = false;
                     btnCancelar.Enabled = false;
                     btnExcluir.Enabled = false;
-                    btnLocalizar.Enabled = false;
+                    btnSalvar.Enabled = false;
                     Limpar();
                 }
                 else MessageBox.Show("Preencha os Campos!");
@@ -133,7 +138,7 @@ namespace Projeto2025_exemplo
             btnAlterar.Enabled = false;
             btnCancelar.Enabled = false;
             btnExcluir.Enabled = false;
-            btnLocalizar.Enabled = false;
+            btnSalvar.Enabled = false;
             Limpar();
         }
 
@@ -141,7 +146,10 @@ namespace Projeto2025_exemplo
         {
             if (txtID.Text != "")
             {
-                carregaPropriedades();
+                var cat = carregaPropriedades();
+                repositorio.Excluir(cat);
+                Program.serviceProvider.GetRequiredService<Contexto_Empresa>().SaveChanges();
+
                 MessageBox.Show("Excluido com Sucesso!");
                 pDados.Enabled = false;
                 btnNovo.Enabled = true;
@@ -149,7 +157,7 @@ namespace Projeto2025_exemplo
                 btnAlterar.Enabled = false;
                 btnCancelar.Enabled = false;
                 btnExcluir.Enabled = false;
-                btnLocalizar.Enabled = false;
+                btnSalvar.Enabled = false;
                 Limpar();
             }
             else MessageBox.Show("Localize a Categoria!");
@@ -157,14 +165,27 @@ namespace Projeto2025_exemplo
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
-            pDados.Enabled = false;
-            btnNovo.Enabled = false;
-            btnLocalizar.Enabled = false;
-            btnAlterar.Enabled = true;
-            btnCancelar.Enabled = true;
-            btnExcluir.Enabled = true;
-            btnLocalizar.Enabled = false;
-            Limpar();
+            var form2 = Program.serviceProvider.GetService<FrmConsultaCategoria>();
+            form2.ShowDialog();
+
+            if(form2.id > 0)
+            {
+                //select * from categoria where id = form2.id
+                var cat = repositorio.Recuperar(c => c.id == form2.id);
+                if(cat != null)
+                {
+                    txtID.Text = cat.id.ToString();
+                    txtDescricao.Text = cat.descricao;
+
+                    pDados.Enabled = false;
+                    btnNovo.Enabled = false;
+                    btnLocalizar.Enabled = false;
+                    btnAlterar.Enabled = true;
+                    btnCancelar.Enabled = true;
+                    btnExcluir.Enabled = true;
+                    btnSalvar.Enabled = false;
+                }
+            }    
         }
     }
 }
