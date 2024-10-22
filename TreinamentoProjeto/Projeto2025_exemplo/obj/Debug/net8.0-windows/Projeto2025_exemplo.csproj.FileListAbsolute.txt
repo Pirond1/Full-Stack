@@ -141,3 +141,4 @@ C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\TreinamentoProjeto\Projeto20
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\TreinamentoProjeto\Projeto2025_exemplo\obj\Debug\net8.0-windows\Projeto2025_exemplo.genruntimeconfig.cache
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\TreinamentoProjeto\Projeto2025_exemplo\obj\Debug\net8.0-windows\ref\Projeto2025_exemplo.dll
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\TreinamentoProjeto\Projeto2025_exemplo\obj\Debug\net8.0-windows\Projeto2025_exemplo.FrmProduto.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\TreinamentoProjeto\Projeto2025_exemplo\obj\Debug\net8.0-windows\Projeto2025_exemplo.FrmConsultaProduto.resources

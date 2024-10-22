@@ -20,8 +20,14 @@ namespace Projeto2025_exemplo
 
         private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (var form = Program.serviceProvider.GetRequiredService<FrmCategoria>())
+            var form = Program.serviceProvider.GetService<FrmCategoria>();
             form.ShowDialog();
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form2 = Program.serviceProvider.GetService<FrmProduto>();
+            form2.ShowDialog();
         }
     }
 }

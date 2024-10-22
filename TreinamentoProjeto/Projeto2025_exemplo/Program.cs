@@ -32,6 +32,9 @@ namespace Projeto2025_exemplo
             services.AddScoped<FrmCategoria>();
             services.AddScoped<FrmConsultaCategoria>();
             services.AddScoped<FrmPrincipal>();
+            services.AddScoped<FrmProduto>();
+            services.AddScoped<FrmConsultaProduto>();
+
 
             //ADICIONAR TODOS AS ENTIDADES
             services.AddSingleton<IRepositorioCategoria, CategoriaRepositorio>();
