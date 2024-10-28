@@ -34,7 +34,7 @@ namespace InfraEstrutura.Contexto
         {
         
         //base.OnConfiguring(optionsBuilder);
-        var stringConexao = @"Server=LAB10-14; 
+        var stringConexao = @"Server=PC-SMARTGAMER; 
                  DataBase=dbProjetoFinal;integrated security=true; TrustServerCertificate=True;";
                  // ALTERAR O SERVER DE ACORDO COM O PC QUE ESTÁ (Em casa -> PC-SMARTGAMER / Faculdade -> LAB10-14)
 
@@ -69,6 +69,27 @@ namespace InfraEstrutura.Contexto
 
              });
 
-         }
+            modelBuilder.Entity<Automovel>(e =>
+            {
+                e.Property(p => p.cor).HasMaxLength(50);
+                e.Property(p=> p.numeroChassi).HasMaxLength(50);
+
+                e.HasOne(p => p.modelo)
+                    .WithMany(p => p.automovel)
+                    .HasForeignKey(p => p.idModelo)
+                    .HasConstraintName("fk_modelo_automovel")
+                    .OnDelete(DeleteBehavior.NoAction);
+            });
+
+            modelBuilder.Entity<Tipo_Ordem>(e =>
+            {
+                e.Property(p => p.nomeTipo).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<Pagamento>(e =>
+            {
+                e.Property(p => p.nomePagamento).HasMaxLength(50);
+            });
+        }
     }
 }

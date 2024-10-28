@@ -9,6 +9,7 @@
       "InfraEstrutura/1.0.0": {
         "dependencies": {
           "Entidades": "1.0.0",
+          "Interfaces": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
@@ -569,6 +570,14 @@
         "runtime": {
           "Entidades.dll": {}
         }
+      },
+      "Interfaces/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Interfaces.dll": {}
+        }
       }
     }
   },
@@ -964,6 +973,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

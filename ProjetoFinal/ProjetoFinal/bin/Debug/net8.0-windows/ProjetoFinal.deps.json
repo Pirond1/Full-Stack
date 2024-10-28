@@ -10,6 +10,7 @@
         "dependencies": {
           "Entidades": "1.0.0",
           "InfraEstrutura": "1.0.0",
+          "Interfaces": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
@@ -558,11 +559,20 @@
       "InfraEstrutura/1.0.0": {
         "dependencies": {
           "Entidades": "1.0.0",
+          "Interfaces": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
         "runtime": {
           "InfraEstrutura.dll": {}
+        }
+      },
+      "Interfaces/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Interfaces.dll": {}
         }
       }
     }
@@ -978,6 +988,11 @@
       "sha512": ""
     },
     "InfraEstrutura/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
