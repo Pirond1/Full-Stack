@@ -31,7 +31,7 @@ namespace ProjetoFinal
             if (lista.Count > 0)
             {
                 gdDados.Columns["modelo"].Visible = false;
-                gdDados.Columns["ordem"].Visible = false;   
+                gdDados.Columns["ordem"].Visible = false;
                 gdDados.Columns["numerochassi"].HeaderText = "Numero Chassi";
                 gdDados.Columns["cor"].HeaderText = "Cor";
                 gdDados.Columns["ano"].HeaderText = "Ano";
@@ -46,6 +46,11 @@ namespace ProjetoFinal
         {
             id = (int)gdDados.Rows[e.RowIndex].Cells[0].Value;
             this.Close();
+        }
+
+        private void FrmConsultaAutomovel_Load(object sender, EventArgs e)
+        {
+            gdDados.DataSource = null;
         }
     }
 }

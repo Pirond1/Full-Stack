@@ -82,6 +82,7 @@
             Name = "FrmConsultaTipoOrdem";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmConsultaTipoOrdem";
+            Load += FrmConsultaTipoOrdem_Load;
             ((System.ComponentModel.ISupportInitialize)gdDados).EndInit();
             ResumeLayout(false);
             PerformLayout();

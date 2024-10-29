@@ -193,6 +193,8 @@ namespace ProjetoFinal
                     txtAno.Text = aut.ano.ToString();
                     txtPortas.Text = aut.numeroPortas.ToString();
                     txtCor.Text = aut.cor;
+                    txtChassi.Text = aut.numeroChassi;
+                    txtKm.Text = aut.quilometragem.ToString();
                     cbbModelo.SelectedValue = aut.idModelo;
 
                     pDados.Enabled = false;

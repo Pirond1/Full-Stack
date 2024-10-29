@@ -27,7 +27,6 @@ namespace ProjetoFinal
         {
             services.AddDbContext<Contexto_Empresa>(); //Classe que representa o Contexto
 
-            services.AddScoped<Form1>();
             services.AddScoped<FrmPrincipal>();
             services.AddScoped<FrmMarca>();
             services.AddScoped<FrmConsultaMarca>();

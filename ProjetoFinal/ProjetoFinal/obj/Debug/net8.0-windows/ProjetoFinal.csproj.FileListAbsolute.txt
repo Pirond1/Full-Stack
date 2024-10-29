@@ -54,7 +54,6 @@ C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bi
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\Entidades.pdb
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\InfraEstrutura.pdb
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.csproj.AssemblyReference.cache
-C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.Form1.resources
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.csproj.GenerateResource.cache
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.AssemblyInfoInputs.cache
@@ -149,3 +148,16 @@ C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\ne
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmTipoOrdem.resources
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaPagamento.resources
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmPagamento.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmAutomovel.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaAutomovel.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaMarca.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaModelo.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaPagamento.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaTipoOrdem.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmMarca.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmModelo.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmPagamento.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmPrincipal.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmTipoOrdem.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\Interfaces.dll
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\Interfaces.pdb

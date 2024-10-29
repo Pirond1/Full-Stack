@@ -39,5 +39,10 @@ namespace ProjetoFinal
             id = (int)gdDados.Rows[e.RowIndex].Cells[0].Value;
             this.Close();
         }
+
+        private void FrmConsultaTipoOrdem_Load(object sender, EventArgs e)
+        {
+            gdDados.DataSource = null;
+        }
     }
 }

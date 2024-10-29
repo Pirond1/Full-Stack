@@ -82,6 +82,7 @@
             Name = "FrmConsultaModelo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmConsultaModelo";
+            Load += FrmConsultaModelo_Load;
             ((System.ComponentModel.ISupportInitialize)gdDados).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -82,6 +82,7 @@
             Name = "FrmConsultaPagamento";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmConsultaPagamento";
+            Load += FrmConsultaPagamento_Load;
             ((System.ComponentModel.ISupportInitialize)gdDados).EndInit();
             ResumeLayout(false);
             PerformLayout();

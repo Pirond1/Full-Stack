@@ -34,7 +34,7 @@ namespace InfraEstrutura.Contexto
         {
         
         //base.OnConfiguring(optionsBuilder);
-        var stringConexao = @"Server=PC-SMARTGAMER; 
+        var stringConexao = @"Server=LAB10-14; 
                  DataBase=dbProjetoFinal;integrated security=true; TrustServerCertificate=True;";
                  // ALTERAR O SERVER DE ACORDO COM O PC QUE ESTÁ (Em casa -> PC-SMARTGAMER / Faculdade -> LAB10-14)
 

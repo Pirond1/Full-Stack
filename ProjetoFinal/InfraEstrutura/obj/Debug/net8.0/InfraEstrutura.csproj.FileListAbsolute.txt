@@ -32,3 +32,5 @@ C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\InfraEstrutura\obj\Debug\
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\InfraEstrutura\obj\Debug\net8.0\refint\InfraEstrutura.dll
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\InfraEstrutura\obj\Debug\net8.0\InfraEstrutura.pdb
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\InfraEstrutura\obj\Debug\net8.0\ref\InfraEstrutura.dll
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\InfraEstrutura\bin\Debug\net8.0\Interfaces.dll
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\InfraEstrutura\bin\Debug\net8.0\Interfaces.pdb
