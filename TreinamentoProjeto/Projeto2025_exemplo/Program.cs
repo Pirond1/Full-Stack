@@ -34,11 +34,13 @@ namespace Projeto2025_exemplo
             services.AddScoped<FrmPrincipal>();
             services.AddScoped<FrmProduto>();
             services.AddScoped<FrmConsultaProduto>();
+            services.AddScoped<FrmLogin>();
 
 
             //ADICIONAR TODOS AS ENTIDADES
             services.AddSingleton<IRepositorioCategoria, CategoriaRepositorio>();
             services.AddSingleton<IRepositorioProdutos, ProdutoRepositorio>();
+            services.AddSingleton<IRepositorioFuncionario, FuncionarioRepositorio>();
         }
     }
 }
