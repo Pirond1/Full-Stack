@@ -18,6 +18,8 @@ namespace Entidades
         public int numeroPortas { get; set; }
         public int quilometragem { get; set; }
         public String numeroChassi { get; set; } = String.Empty;
+        public decimal valorVenda { get; set; }
+        public decimal valorAluguel { get; set; }
         public int idModelo { get; set; }
 
         public Modelo modelo { get; set; }

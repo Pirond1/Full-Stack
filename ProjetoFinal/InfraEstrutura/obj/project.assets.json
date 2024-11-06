@@ -2788,26 +2788,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gustavopirondi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\InfraEstrutura.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\InfraEstrutura.csproj",
       "projectName": "InfraEstrutura",
-      "projectPath": "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\InfraEstrutura.csproj",
-      "packagesPath": "C:\\Users\\gustavopirondi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\InfraEstrutura.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\InfraEstrutura\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\gustavopirondi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2815,18 +2808,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj"
+            "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Entidades\\Entidades.csproj"
             },
-            "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Interfaces\\Interfaces.csproj": {
-              "projectPath": "C:\\Users\\gustavopirondi\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Interfaces\\Interfaces.csproj"
+            "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Interfaces\\Interfaces.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Full-Stack\\ProjetoFinal\\Interfaces\\Interfaces.csproj"
             }
           }
         }
@@ -2835,6 +2827,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2866,7 +2863,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

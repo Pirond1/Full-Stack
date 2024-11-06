@@ -9,7 +9,6 @@ namespace Entidades
     public class Venda
     {
         public int id {  get; set; }
-        public float ValorVenda { get; set; }
         public DateTime dataVenda { get; set; }
         public DateTime dataRetirada { get; set; }
         public int idPagamento { get; set; }

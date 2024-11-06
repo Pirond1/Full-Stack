@@ -50,12 +50,20 @@
             btnSalvar = new Button();
             btnAlterar = new Button();
             btnNovo = new Button();
+            txtVenda = new TextBox();
+            label8 = new Label();
+            txtAluguel = new TextBox();
+            label9 = new Label();
             pDados.SuspendLayout();
             pBotoes.SuspendLayout();
             SuspendLayout();
             // 
             // pDados
             // 
+            pDados.Controls.Add(txtAluguel);
+            pDados.Controls.Add(label9);
+            pDados.Controls.Add(txtVenda);
+            pDados.Controls.Add(label8);
             pDados.Controls.Add(txtKm);
             pDados.Controls.Add(label7);
             pDados.Controls.Add(label6);
@@ -72,7 +80,7 @@
             pDados.Controls.Add(label2);
             pDados.Location = new Point(10, 6);
             pDados.Name = "pDados";
-            pDados.Size = new Size(497, 220);
+            pDados.Size = new Size(497, 269);
             pDados.TabIndex = 0;
             // 
             // txtKm
@@ -204,7 +212,7 @@
             pBotoes.Controls.Add(btnSalvar);
             pBotoes.Controls.Add(btnAlterar);
             pBotoes.Controls.Add(btnNovo);
-            pBotoes.Location = new Point(10, 230);
+            pBotoes.Location = new Point(10, 291);
             pBotoes.Name = "pBotoes";
             pBotoes.Size = new Size(497, 60);
             pBotoes.TabIndex = 1;
@@ -269,11 +277,45 @@
             btnNovo.UseVisualStyleBackColor = true;
             btnNovo.Click += btnNovo_Click;
             // 
+            // txtVenda
+            // 
+            txtVenda.Location = new Point(10, 228);
+            txtVenda.MaxLength = 50;
+            txtVenda.Name = "txtVenda";
+            txtVenda.Size = new Size(229, 23);
+            txtVenda.TabIndex = 27;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(10, 210);
+            label8.Name = "label8";
+            label8.Size = new Size(84, 15);
+            label8.TabIndex = 28;
+            label8.Text = "Valor de Venda";
+            // 
+            // txtAluguel
+            // 
+            txtAluguel.Location = new Point(259, 228);
+            txtAluguel.MaxLength = 50;
+            txtAluguel.Name = "txtAluguel";
+            txtAluguel.Size = new Size(229, 23);
+            txtAluguel.TabIndex = 29;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(259, 210);
+            label9.Name = "label9";
+            label9.Size = new Size(86, 15);
+            label9.TabIndex = 30;
+            label9.Text = "Valor de Alguel";
+            // 
             // FrmAutomovel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(516, 300);
+            ClientSize = new Size(516, 359);
             Controls.Add(pBotoes);
             Controls.Add(pDados);
             Name = "FrmAutomovel";
@@ -310,5 +352,9 @@
         private Button btnSalvar;
         private Button btnAlterar;
         private Button btnNovo;
+        private TextBox txtAluguel;
+        private Label label9;
+        private TextBox txtVenda;
+        private Label label8;
     }
 }

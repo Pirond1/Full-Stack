@@ -34,7 +34,7 @@ namespace InfraEstrutura.Contexto
         {
         
         //base.OnConfiguring(optionsBuilder);
-        var stringConexao = @"Server=LAB10-14; 
+        var stringConexao = @"Server=PC-SMARTGAMER; 
                  DataBase=dbProjetoFinal;integrated security=true; TrustServerCertificate=True;";
                  // ALTERAR O SERVER DE ACORDO COM O PC QUE ESTÁ (Em casa -> PC-SMARTGAMER / Faculdade -> LAB10-14)
 
@@ -73,6 +73,8 @@ namespace InfraEstrutura.Contexto
             {
                 e.Property(p => p.cor).HasMaxLength(50);
                 e.Property(p=> p.numeroChassi).HasMaxLength(50);
+                e.Property(p => p.valorVenda).HasPrecision(8, 2);
+                e.Property(p => p.valorAluguel).HasPrecision(8, 2);
 
                 e.HasOne(p => p.modelo)
                     .WithMany(p => p.automovel)

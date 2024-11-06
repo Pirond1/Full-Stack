@@ -43,6 +43,8 @@ namespace ProjetoFinal
             aut.numeroPortas = int.Parse(txtPortas.Text);
             aut.numeroChassi = txtChassi.Text;
             aut.quilometragem = int.Parse(txtKm.Text);
+            aut.valorVenda = decimal.Parse(txtVenda.Text);
+            aut.valorAluguel = decimal.Parse(txtAluguel.Text);
             //Recuperar ID de Categoria selecionada para CHAVE ESTRANGEIRA
             aut.idModelo = (int)cbbModelo.SelectedValue;
 
@@ -57,6 +59,8 @@ namespace ProjetoFinal
             txtPortas.Text = "";
             txtChassi.Text = "";
             txtKm.Text = "";
+            txtAluguel.Text = "";
+            txtVenda.Text = "";
             cbbModelo.SelectedIndex = -1; //Limpar ComboBox
         }
 
@@ -113,7 +117,7 @@ namespace ProjetoFinal
         {
             try
             {
-                if (txtAno.Text != "" || txtPortas.Text != "" || txtCor.Text != String.Empty || txtChassi.Text != String.Empty || txtKm.Text != "")
+                if (txtAno.Text != "" || txtPortas.Text != "" || txtCor.Text != String.Empty || txtChassi.Text != String.Empty || txtKm.Text != "" || txtAluguel.Text != "" || txtVenda.Text != "")
                 {
                     Automovel aut = carregaPropriedades();
                     if (aut.id == 0)
@@ -195,6 +199,8 @@ namespace ProjetoFinal
                     txtCor.Text = aut.cor;
                     txtChassi.Text = aut.numeroChassi;
                     txtKm.Text = aut.quilometragem.ToString();
+                    txtAluguel.Text = aut.valorAluguel.ToString();
+                    txtVenda.Text = aut.valorVenda.ToString();
                     cbbModelo.SelectedValue = aut.idModelo;
 
                     pDados.Enabled = false;

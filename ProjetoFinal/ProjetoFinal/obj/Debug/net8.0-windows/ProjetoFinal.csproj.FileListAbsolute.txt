@@ -124,7 +124,6 @@ C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\ne
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\InfraEstrutura.pdb
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\Interfaces.pdb
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.csproj.AssemblyReference.cache
-C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.Form1.resources
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaMarca.resources
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmMarca.resources
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmPrincipal.resources
