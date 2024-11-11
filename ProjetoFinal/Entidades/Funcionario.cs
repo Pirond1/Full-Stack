@@ -15,8 +15,10 @@ namespace Entidades
 
         public int id { get; set; }
         public String nome { get; set; }
+        public String login { get; set; }
+        public String senha { get; set; }
         public DateTime dataNascimento { get; set; }
-        public float salario {  get; set; }
+        public Decimal salario {  get; set; }
         public virtual ICollection<Ordem> ordem { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace Entidades
 
         public int id { get; set; }
         public String nome { get; set; } = String.Empty;
+        public String CPF { get; set; } 
         public virtual ICollection<Ordem> ordem { get; set; }
     }
 }

@@ -28,6 +28,7 @@ namespace ProjetoFinal
             services.AddDbContext<Contexto_Empresa>(); //Classe que representa o Contexto
 
             services.AddScoped<FrmPrincipal>();
+            services.AddScoped<FrmLogin>();
             services.AddScoped<FrmMarca>();
             services.AddScoped<FrmConsultaMarca>();
             services.AddScoped<FrmModelo>();
@@ -38,6 +39,12 @@ namespace ProjetoFinal
             services.AddScoped<FrmConsultaTipoOrdem>();
             services.AddScoped<FrmPagamento>();
             services.AddScoped<FrmConsultaPagamento>();
+            services.AddScoped<FrmFuncionario>();
+            services.AddScoped<FrmConsultaFuncionario>();
+            services.AddScoped<FrmCliente>();
+            services.AddScoped<FrmConsultaCliente>();
+            services.AddScoped<FrmOrdem>();
+            //services.AddScoped<FrmConsultaOrdem>();
 
 
             services.AddSingleton<IRepositorioMarca, MarcaRepositorio>();
@@ -45,6 +52,9 @@ namespace ProjetoFinal
             services.AddSingleton<IRepositorioAutomovel, AutomovelRepositorio>();
             services.AddSingleton<IRepositorioTipoOrdem, TipoOrdemRepositorio>();
             services.AddSingleton<IRepositorioPagamento, PagamentoRepositorio>();
+            services.AddSingleton<IRepositorioFuncionario, FuncionarioRepositorio>();
+            services.AddSingleton<IRepositorioCliente, ClienteRepositorio>();
+            services.AddSingleton<IRepositorioOrdem, OrdemRepositorio>();
         }
     }
 }

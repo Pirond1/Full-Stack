@@ -35,21 +35,25 @@
             automóvelToolStripMenuItem = new ToolStripMenuItem();
             tipoDeOrdemToolStripMenuItem = new ToolStripMenuItem();
             pagamentoToolStripMenuItem = new ToolStripMenuItem();
+            funcionarioToolStripMenuItem = new ToolStripMenuItem();
+            clienteToolStripMenuItem = new ToolStripMenuItem();
+            criaçãoDePedidosToolStripMenuItem = new ToolStripMenuItem();
+            ordemToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { criaçãoDeCadastrosToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { criaçãoDeCadastrosToolStripMenuItem, criaçãoDePedidosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(270, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
             // criaçãoDeCadastrosToolStripMenuItem
             // 
-            criaçãoDeCadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { marcaToolStripMenuItem, modeloToolStripMenuItem, automóvelToolStripMenuItem, tipoDeOrdemToolStripMenuItem, pagamentoToolStripMenuItem });
+            criaçãoDeCadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { marcaToolStripMenuItem, modeloToolStripMenuItem, automóvelToolStripMenuItem, tipoDeOrdemToolStripMenuItem, pagamentoToolStripMenuItem, funcionarioToolStripMenuItem, clienteToolStripMenuItem });
             criaçãoDeCadastrosToolStripMenuItem.Name = "criaçãoDeCadastrosToolStripMenuItem";
             criaçãoDeCadastrosToolStripMenuItem.Size = new Size(130, 20);
             criaçãoDeCadastrosToolStripMenuItem.Text = "Criação de Cadastros";
@@ -57,48 +61,77 @@
             // marcaToolStripMenuItem
             // 
             marcaToolStripMenuItem.Name = "marcaToolStripMenuItem";
-            marcaToolStripMenuItem.Size = new Size(180, 22);
+            marcaToolStripMenuItem.Size = new Size(153, 22);
             marcaToolStripMenuItem.Text = "Marca";
             marcaToolStripMenuItem.Click += marcaToolStripMenuItem_Click;
             // 
             // modeloToolStripMenuItem
             // 
             modeloToolStripMenuItem.Name = "modeloToolStripMenuItem";
-            modeloToolStripMenuItem.Size = new Size(180, 22);
+            modeloToolStripMenuItem.Size = new Size(153, 22);
             modeloToolStripMenuItem.Text = "Modelo";
             modeloToolStripMenuItem.Click += modeloToolStripMenuItem_Click;
             // 
             // automóvelToolStripMenuItem
             // 
             automóvelToolStripMenuItem.Name = "automóvelToolStripMenuItem";
-            automóvelToolStripMenuItem.Size = new Size(180, 22);
+            automóvelToolStripMenuItem.Size = new Size(153, 22);
             automóvelToolStripMenuItem.Text = "Automóvel";
             automóvelToolStripMenuItem.Click += automóvelToolStripMenuItem_Click;
             // 
             // tipoDeOrdemToolStripMenuItem
             // 
             tipoDeOrdemToolStripMenuItem.Name = "tipoDeOrdemToolStripMenuItem";
-            tipoDeOrdemToolStripMenuItem.Size = new Size(180, 22);
+            tipoDeOrdemToolStripMenuItem.Size = new Size(153, 22);
             tipoDeOrdemToolStripMenuItem.Text = "Tipo de Ordem";
             tipoDeOrdemToolStripMenuItem.Click += tipoDeOrdemToolStripMenuItem_Click;
             // 
             // pagamentoToolStripMenuItem
             // 
             pagamentoToolStripMenuItem.Name = "pagamentoToolStripMenuItem";
-            pagamentoToolStripMenuItem.Size = new Size(180, 22);
+            pagamentoToolStripMenuItem.Size = new Size(153, 22);
             pagamentoToolStripMenuItem.Text = "Pagamento";
             pagamentoToolStripMenuItem.Click += pagamentoToolStripMenuItem_Click;
+            // 
+            // funcionarioToolStripMenuItem
+            // 
+            funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
+            funcionarioToolStripMenuItem.Size = new Size(153, 22);
+            funcionarioToolStripMenuItem.Text = "Funcionario";
+            funcionarioToolStripMenuItem.Click += funcionarioToolStripMenuItem_Click;
+            // 
+            // clienteToolStripMenuItem
+            // 
+            clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            clienteToolStripMenuItem.Size = new Size(153, 22);
+            clienteToolStripMenuItem.Text = "Cliente";
+            clienteToolStripMenuItem.Click += clienteToolStripMenuItem_Click;
+            // 
+            // criaçãoDePedidosToolStripMenuItem
+            // 
+            criaçãoDePedidosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ordemToolStripMenuItem });
+            criaçãoDePedidosToolStripMenuItem.Name = "criaçãoDePedidosToolStripMenuItem";
+            criaçãoDePedidosToolStripMenuItem.Size = new Size(120, 20);
+            criaçãoDePedidosToolStripMenuItem.Text = "Criação de Pedidos";
+            // 
+            // ordemToolStripMenuItem
+            // 
+            ordemToolStripMenuItem.Name = "ordemToolStripMenuItem";
+            ordemToolStripMenuItem.Size = new Size(180, 22);
+            ordemToolStripMenuItem.Text = "Ordem";
+            ordemToolStripMenuItem.Click += ordemToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(270, 254);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmPrincipal";
+            Load += FrmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -114,5 +147,9 @@
         private ToolStripMenuItem automóvelToolStripMenuItem;
         private ToolStripMenuItem tipoDeOrdemToolStripMenuItem;
         private ToolStripMenuItem pagamentoToolStripMenuItem;
+        private ToolStripMenuItem funcionarioToolStripMenuItem;
+        private ToolStripMenuItem clienteToolStripMenuItem;
+        private ToolStripMenuItem criaçãoDePedidosToolStripMenuItem;
+        private ToolStripMenuItem ordemToolStripMenuItem;
     }
 }

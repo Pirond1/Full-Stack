@@ -4,7 +4,16 @@
     <Compile Update="FrmAutomovel.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmConsultaAutomovel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmConsultaFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmConsultaMarca.cs">
@@ -13,16 +22,28 @@
     <Compile Update="FrmConsultaModelo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmConsultaOrdem.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmConsultaPagamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmConsultaTipoOrdem.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmMarca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmOrdem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmPagamento.cs">

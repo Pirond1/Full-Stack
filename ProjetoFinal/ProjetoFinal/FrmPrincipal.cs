@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace ProjetoFinal
 {
     public partial class FrmPrincipal : Form
     {
+        private IRepositorioFuncionario repositorio;
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -45,6 +47,47 @@ namespace ProjetoFinal
         private void pagamentoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = Program.serviceProvider.GetService<FrmPagamento>();
+            form.ShowDialog();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            var frm =
+                Program.serviceProvider.GetRequiredService<FrmLogin>();
+            frm.ShowDialog();
+            if (frm.idFuncionario == -1)
+            {
+                MessageBox.Show("Bem vindo Admin!");
+            }
+            else
+            {
+                if (frm.idFuncionario > 0)
+                {
+                    //encontrou
+                    var funcionario = repositorio.Recuperar(f => f.id == frm.idFuncionario);
+                    MessageBox.Show("Bem vindo " + funcionario.nome + "!");
+                }
+                else
+                    this.Close();
+            }
+        }
+
+
+        private void funcionarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = Program.serviceProvider.GetService<FrmFuncionario>();
+            form.ShowDialog();
+        }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = Program.serviceProvider.GetService<FrmCliente>();
+            form.ShowDialog();
+        }
+
+        private void ordemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = Program.serviceProvider.GetService<FrmOrdem>();
             form.ShowDialog();
         }
     }

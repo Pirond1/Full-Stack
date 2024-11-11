@@ -160,3 +160,10 @@ C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\ob
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmTipoOrdem.resources
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\Interfaces.dll
 C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\bin\Debug\net8.0-windows\Interfaces.pdb
+C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmLogin.resources
+C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmCliente.resources
+C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaCliente.resources
+C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaFuncionario.resources
+C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmFuncionario.resources
+C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmOrdem.resources
+C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaOrdem.resources

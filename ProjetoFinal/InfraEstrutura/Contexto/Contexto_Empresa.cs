@@ -92,6 +92,18 @@ namespace InfraEstrutura.Contexto
             {
                 e.Property(p => p.nomePagamento).HasMaxLength(50);
             });
+
+            modelBuilder.Entity<Funcionario>(e =>
+            {
+                e.Property(p => p.nome).HasMaxLength(100);
+                e.Property(p => p.salario).HasPrecision(8, 2);
+            });
+
+            modelBuilder.Entity<Cliente>(e =>
+            {
+                e.Property(p => p.nome).HasMaxLength(100);
+                e.Property(p => p.CPF).HasMaxLength(14);
+            });
         }
     }
 }
