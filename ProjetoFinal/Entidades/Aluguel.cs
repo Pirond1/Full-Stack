@@ -9,7 +9,6 @@ namespace Entidades
     public class Aluguel
     {
         public int id { get; set; }
-        public DateTime dataAluguel { get; set; }
         public DateTime dataRetirada { get; set; }
         public DateTime dataDevolucao { get; set; }
         public int idPagamento { get; set; }

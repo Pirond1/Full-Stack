@@ -90,5 +90,17 @@ namespace ProjetoFinal
             var form = Program.serviceProvider.GetService<FrmOrdem>();
             form.ShowDialog();
         }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = Program.serviceProvider.GetService<FrmVenda>();
+            form.ShowDialog();
+        }
+
+        private void aluguelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = Program.serviceProvider.GetService<FrmAluguel>();
+            form.ShowDialog();
+        }
     }
 }

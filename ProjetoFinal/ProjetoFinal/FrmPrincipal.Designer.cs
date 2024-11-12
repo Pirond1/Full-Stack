@@ -39,6 +39,8 @@
             clienteToolStripMenuItem = new ToolStripMenuItem();
             criaçãoDePedidosToolStripMenuItem = new ToolStripMenuItem();
             ordemToolStripMenuItem = new ToolStripMenuItem();
+            vendaToolStripMenuItem = new ToolStripMenuItem();
+            aluguelToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -109,7 +111,7 @@
             // 
             // criaçãoDePedidosToolStripMenuItem
             // 
-            criaçãoDePedidosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ordemToolStripMenuItem });
+            criaçãoDePedidosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ordemToolStripMenuItem, vendaToolStripMenuItem, aluguelToolStripMenuItem });
             criaçãoDePedidosToolStripMenuItem.Name = "criaçãoDePedidosToolStripMenuItem";
             criaçãoDePedidosToolStripMenuItem.Size = new Size(120, 20);
             criaçãoDePedidosToolStripMenuItem.Text = "Criação de Pedidos";
@@ -120,6 +122,20 @@
             ordemToolStripMenuItem.Size = new Size(180, 22);
             ordemToolStripMenuItem.Text = "Ordem";
             ordemToolStripMenuItem.Click += ordemToolStripMenuItem_Click;
+            // 
+            // vendaToolStripMenuItem
+            // 
+            vendaToolStripMenuItem.Name = "vendaToolStripMenuItem";
+            vendaToolStripMenuItem.Size = new Size(180, 22);
+            vendaToolStripMenuItem.Text = "Venda";
+            vendaToolStripMenuItem.Click += vendaToolStripMenuItem_Click;
+            // 
+            // aluguelToolStripMenuItem
+            // 
+            aluguelToolStripMenuItem.Name = "aluguelToolStripMenuItem";
+            aluguelToolStripMenuItem.Size = new Size(180, 22);
+            aluguelToolStripMenuItem.Text = "Aluguel";
+            aluguelToolStripMenuItem.Click += aluguelToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -151,5 +167,7 @@
         private ToolStripMenuItem clienteToolStripMenuItem;
         private ToolStripMenuItem criaçãoDePedidosToolStripMenuItem;
         private ToolStripMenuItem ordemToolStripMenuItem;
+        private ToolStripMenuItem vendaToolStripMenuItem;
+        private ToolStripMenuItem aluguelToolStripMenuItem;
     }
 }

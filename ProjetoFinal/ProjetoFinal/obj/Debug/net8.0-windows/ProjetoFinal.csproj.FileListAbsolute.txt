@@ -167,3 +167,13 @@ C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\ne
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmFuncionario.resources
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmOrdem.resources
 C:\Users\User\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaOrdem.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmCliente.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaCliente.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaFuncionario.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaOrdem.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmFuncionario.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmLogin.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmOrdem.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmAluguel.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmConsultaVenda.resources
+C:\Users\gustavopirondi\Documents\GitHub\Full-Stack\ProjetoFinal\ProjetoFinal\obj\Debug\net8.0-windows\ProjetoFinal.FrmVenda.resources

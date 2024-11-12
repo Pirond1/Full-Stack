@@ -44,7 +44,11 @@ namespace ProjetoFinal
             services.AddScoped<FrmCliente>();
             services.AddScoped<FrmConsultaCliente>();
             services.AddScoped<FrmOrdem>();
-            //services.AddScoped<FrmConsultaOrdem>();
+            services.AddScoped<FrmConsultaOrdem>();
+            services.AddScoped<FrmVenda>();
+            services.AddScoped<FrmConsultaVenda>();
+            services.AddScoped<FrmAluguel>();
+            services.AddScoped<FrmConsultaAluguel>();
 
 
             services.AddSingleton<IRepositorioMarca, MarcaRepositorio>();
@@ -55,6 +59,8 @@ namespace ProjetoFinal
             services.AddSingleton<IRepositorioFuncionario, FuncionarioRepositorio>();
             services.AddSingleton<IRepositorioCliente, ClienteRepositorio>();
             services.AddSingleton<IRepositorioOrdem, OrdemRepositorio>();
+            services.AddSingleton<IRepositorioVenda, VendaRepositorio>();
+            services.AddSingleton<IRepositorioAluguel, AluguelRepositorio>();
         }
     }
 }

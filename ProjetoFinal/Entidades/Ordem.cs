@@ -9,11 +9,6 @@ namespace Entidades
 {
     public class Ordem
     {
-        public Ordem()
-        {
-            this.venda = new HashSet<Venda>();
-            this.aluguel = new HashSet<Aluguel>();
-        }
 
         public int id { get; set; }
         public DateTime dataOrdem {  get; set; }
@@ -26,7 +21,8 @@ namespace Entidades
         public Tipo_Ordem tipo_ordem { get; set; }
         public Funcionario funcionario { get; set; }
         public Cliente cliente { get; set; }
-        public virtual ICollection<Venda> venda { get; set; }
-        public virtual ICollection<Aluguel> aluguel { get; set; }
+
+        public Venda venda { get; set; }
+        public Aluguel aluguel { get; set; }
     }
 }

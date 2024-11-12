@@ -126,7 +126,7 @@ namespace ProjetoFinal
         {
             try
             {
-                if (txtData.Text != "" || cbbAutomovel.SelectedIndex != 0 || cbbTipoOrdem.SelectedIndex != 0 || cbbFuncionario.SelectedIndex != 0 || cbbCliente.SelectedIndex != 0)
+                if (txtData.Text != "" || cbbAutomovel.SelectedIndex != -1 || cbbTipoOrdem.SelectedIndex != -1 || cbbFuncionario.SelectedIndex != -1 || cbbCliente.SelectedIndex != -1)
                 {
                     Ordem ord = carregaPropriedades();
                     if (ord.id == 0)

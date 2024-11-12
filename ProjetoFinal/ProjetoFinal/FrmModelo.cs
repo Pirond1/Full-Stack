@@ -82,7 +82,7 @@ namespace ProjetoFinal
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            if (txtID.Text != "")
+            if (txtID.Text != "" || cbbMarca.SelectedIndex != -1)
             {
                 pDados.Enabled = true;
                 btnNovo.Enabled = false;

@@ -34,7 +34,7 @@ namespace InfraEstrutura.Contexto
         {
         
         //base.OnConfiguring(optionsBuilder);
-        var stringConexao = @"Server=PC-SMARTGAMER; 
+        var stringConexao = @"Server=LAB10-14; 
                  DataBase=dbProjetoFinal;integrated security=true; TrustServerCertificate=True;";
                  // ALTERAR O SERVER DE ACORDO COM O PC QUE ESTÁ (Em casa -> PC-SMARTGAMER / Faculdade -> LAB10-14)
 
@@ -103,6 +103,63 @@ namespace InfraEstrutura.Contexto
             {
                 e.Property(p => p.nome).HasMaxLength(100);
                 e.Property(p => p.CPF).HasMaxLength(14);
+            });
+
+            modelBuilder.Entity<Ordem>(e =>
+            {
+                e.HasOne(p => p.automovel)
+                    .WithMany(p => p.ordem)
+                    .HasForeignKey(p => p.idAutomovel)
+                    .HasConstraintName("fk_automovel_ordem")
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                e.HasOne(p => p.tipo_ordem)
+                    .WithMany(p => p.ordem)
+                    .HasForeignKey(p => p.idTipo_Ordem)
+                    .HasConstraintName("fk_tipoordem_ordem")
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                e.HasOne(p => p.funcionario)
+                    .WithMany(p => p.ordem)
+                    .HasForeignKey(p => p.idFuncionario)
+                    .HasConstraintName("fk_funcionario_ordem")
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                e.HasOne(p => p.cliente)
+                    .WithMany(p => p.ordem)
+                    .HasForeignKey(p => p.idCliente)
+                    .HasConstraintName("fk_cliente_ordem")
+                    .OnDelete(DeleteBehavior.NoAction);
+            });
+
+            modelBuilder.Entity<Venda>(e =>
+            {
+                e.HasOne(p => p.pagamento)
+                    .WithMany(p => p.venda)
+                    .HasForeignKey(p => p.idPagamento)
+                    .HasConstraintName("fk_pagamento_venda")
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                e.HasOne(p => p.ordem)
+                    .WithOne(p => p.venda)
+                    .HasForeignKey<Venda>(p => p.idOrdem)
+                    .HasConstraintName("fk_ordem_venda")
+                    .OnDelete(DeleteBehavior.NoAction);
+            });
+
+            modelBuilder.Entity<Aluguel>(e =>
+            {
+                e.HasOne(p => p.pagamento)
+                    .WithMany(p => p.aluguel)
+                    .HasForeignKey(p => p.idPagamento)
+                    .HasConstraintName("fk_pagamento_aluguel")
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                e.HasOne(p => p.ordem)
+                    .WithOne(p => p.aluguel)
+                    .HasForeignKey<Venda>(p => p.idOrdem)
+                    .HasConstraintName("fk_ordem_aluguel")
+                    .OnDelete(DeleteBehavior.NoAction);
             });
         }
     }
